@@ -62,5 +62,12 @@ class Trip {
     store.trips.push(this);
   }
   // driver() - returns the driver associated with the trip
+  driver() {
+      return store.drivers.find(
+          function(driver) {
+              return driver.id === this.tripId;
+          }.bind(this)
+      );
+  }
   // passenger() - returns the passenger associated with the trip
 }
