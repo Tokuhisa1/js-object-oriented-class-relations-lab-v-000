@@ -1,7 +1,7 @@
 // Driver class:
 class Driver {
   constructor() {
-    
+
   }
 }
   // A driver has many trips, and has many passengers through
