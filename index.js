@@ -1,6 +1,7 @@
-let store = { drivers: [], passengers: [] };
+let store = { drivers: [], passengers: [], trips: [] };
 let driverId = 0;
 let passengerId = 0;
+let tripId = 0;
 // Driver class:
 class Driver {
   constructor(name) {
@@ -37,10 +38,15 @@ class Passenger {
 }
 // Trip class:
 class Trip {
-  constructor() {
+  constructor(driver, passenger) {
     // new Trip() - initialized with an instance of driver and an
     // instance of passenger; returns a JavaScript that object has
     // attributes id, driverId, and passengerId
+    this.id = ++tripId;
+    this.driverId = driver.id;
+    this.passengerId = passenger.id;
+
+    store.trips.push(this);
   }
   // A trip belongs to a driver and belongs to a passenger.
 
