@@ -47,6 +47,13 @@ class Passenger {
   }
   // drivers() - returns all of the drivers that has taken a
   // passenger on a trip
+  drivers() {
+    return trips.map(
+      function(trip) {
+        return trip.driver;
+      }
+    );
+  }
 }
 // Trip class:
 class Trip {
