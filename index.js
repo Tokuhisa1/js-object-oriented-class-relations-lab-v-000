@@ -15,6 +15,11 @@ class Driver {
   // has taken on a trip
 
 // Passenger class:
+class Passenger {
+  constructor() {
+
+  }
+}
   // A passenger has many trips, and has many drivers through
   // trips.
 
@@ -26,6 +31,11 @@ class Driver {
   // passenger on a trip
 
 // Trip class:
+class Trip {
+  constructor() {
+
+  }
+}
   // A trip belongs to a driver and belongs to a passenger.
   // new Trip() - initialized with an instance of driver and an
   // instance of passenger; returns a JavaScript that object has
