@@ -1,3 +1,4 @@
+let store = { drivers: [], passengers: [] };
 // Driver class:
 let driverId = 0;
 
@@ -7,6 +8,8 @@ class Driver {
     // JavaScript object that has attributes of id, and name
     this.id = ++driverId;
     this.name = name;
+
+    store.drivers.push(this);
   }
   // A driver has many trips, and has many passengers through
   // trips.
