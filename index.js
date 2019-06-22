@@ -1,7 +1,6 @@
 let store = { drivers: [], passengers: [] };
-// Driver class:
 let driverId = 0;
-
+// Driver class:
 class Driver {
   constructor(name) {
     // new Driver() - initialized with a name; returns a
