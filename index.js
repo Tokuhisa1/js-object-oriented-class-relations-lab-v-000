@@ -27,6 +27,8 @@ class Driver {
 }
 // Passenger class:
 class Passenger {
+  // A passenger has many trips, and has many drivers through
+  // trips.
   constructor(name) {
     // new Passenger() - initialized with a name; returns a
     // JavaScript object that has attributes of id, and name
@@ -35,9 +37,6 @@ class Passenger {
 
     store.passengers.push(this);
   }
-  // A passenger has many trips, and has many drivers through
-  // trips.
-
   // trips() - returns all of the trips that a passenger has taken
   trips() {
       return store.trips.filter(
@@ -51,6 +50,7 @@ class Passenger {
 }
 // Trip class:
 class Trip {
+  // A trip belongs to a driver and belongs to a passenger.
   constructor(driver, passenger) {
     // new Trip() - initialized with an instance of driver and an
     // instance of passenger; returns a JavaScript that object has
@@ -61,8 +61,6 @@ class Trip {
 
     store.trips.push(this);
   }
-  // A trip belongs to a driver and belongs to a passenger.
-
   // driver() - returns the driver associated with the trip
   // passenger() - returns the passenger associated with the trip
 }
