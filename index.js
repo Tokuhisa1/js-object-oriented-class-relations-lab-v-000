@@ -24,6 +24,13 @@ class Driver {
   }
   // passengers() - returns all of the passengers that a driver
   // has taken on a trip
+  passengers() {
+    return this.trips().map(
+      function(trip) {
+        return trip.passenger();
+      }
+    );
+  }
 }
 // Passenger class:
 class Passenger {
