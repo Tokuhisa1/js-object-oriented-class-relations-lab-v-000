@@ -10,11 +10,15 @@
   // has taken on a trip
 
 // Passenger class:
-//
-// A passenger has many trips, and has many drivers through trips.
-// new Passenger() - initialized with a name; returns a JavaScript object that has attributes of id, and name
-// trips() - returns all of the trips that a passenger has taken
-// drivers() - returns all of the drivers that has taken a passenger on a trip
+  // A passenger has many trips, and has many drivers through
+  // trips.
+
+  // new Passenger() - initialized with a name; returns a
+  // JavaScript object that has attributes of id, and name
+
+  // trips() - returns all of the trips that a passenger has taken
+  // drivers() - returns all of the drivers that has taken a
+  // passenger on a trip
 // Trip class:
 //
 // A trip belongs to a driver and belongs to a passenger.
