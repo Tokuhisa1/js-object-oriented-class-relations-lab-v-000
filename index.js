@@ -1,8 +1,12 @@
 // Driver class:
+let driverId = 0;
+
 class Driver {
-  constructor() {
+  constructor(name) {
     // new Driver() - initialized with a name; returns a
     // JavaScript object that has attributes of id, and name
+    this.id = ++driverId;
+    this.name = name;
   }
   // A driver has many trips, and has many passengers through
   // trips.
@@ -32,7 +36,7 @@ class Trip {
     // attributes id, driverId, and passengerId
   }
   // A trip belongs to a driver and belongs to a passenger.
-  
+
   // driver() - returns the driver associated with the trip
   // passenger() - returns the passenger associated with the trip
 }
