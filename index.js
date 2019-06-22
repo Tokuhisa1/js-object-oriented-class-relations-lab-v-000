@@ -4,6 +4,8 @@ let passengerId = 0;
 let tripId = 0;
 // Driver class:
 class Driver {
+  // A driver has many trips, and has many passengers through
+  // trips.
   constructor(name) {
     // new Driver() - initialized with a name; returns a
     // JavaScript object that has attributes of id, and name
@@ -12,9 +14,6 @@ class Driver {
 
     store.drivers.push(this);
   }
-  // A driver has many trips, and has many passengers through
-  // trips.
-
   // trips() - returns all of the trips that a driver has taken
   trips() {
       return store.trips.filter(
