@@ -70,4 +70,11 @@ class Trip {
       );
   }
   // passenger() - returns the passenger associated with the trip
+  passenger() {
+      return store.passengers.find(
+          function(passenger) {
+              return passenger.id === this.passengerId;
+          }.bind(this)
+      );
+  }
 }
