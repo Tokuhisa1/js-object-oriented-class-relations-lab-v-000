@@ -26,9 +26,7 @@ class Driver {
   // has taken on a trip
   passengers() {
     return this.trips().map(
-      function(trip) {
-        return trip.passenger();
-      }
+      function(trip) { return trip.passenger(); }
     );
   }
 }
