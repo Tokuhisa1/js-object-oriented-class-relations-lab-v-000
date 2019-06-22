@@ -19,9 +19,13 @@ class Driver {
 }
 // Passenger class:
 class Passenger {
-  constructor() {
+  constructor(name) {
     // new Passenger() - initialized with a name; returns a
     // JavaScript object that has attributes of id, and name
+    this.id = ++passengerId;
+    this.name = name;
+
+    store.passengers.push(this);
   }
   // A passenger has many trips, and has many drivers through
   // trips.
